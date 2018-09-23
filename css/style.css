@@ -1,0 +1,392 @@
+body{
+  font-family: 'Open-sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 80%;
+  margin: auto;
+}
+
+img{
+  width: 100%
+}
+
+/* COMMON CLASSES */
+.primary-text{
+  color: #cc00cc;
+}
+
+.primary-background{
+  color: #cc00cc;
+}
+
+/* HEADER */
+#main-header{
+  border-bottom: 1px solid #cc00cc;
+}
+
+/* NAVBAR */
+#navbar{
+  text-transform: uppercase;
+}
+
+#navbar li{
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+
+#navbar a{
+  text-decoration: none;
+  color: #888;
+  font-size: 12px;
+}
+
+#navbar li.current a, #navbar a:hover{
+  color: #cc00cc;
+  border-bottom: 3px solid #cc00cc;
+  padding-bottom: 3px;
+}
+
+/* SHOWCASE */
+#showcase{
+  background: url(../image/showcase.jpg) no-repeat center center;
+  border-bottom: 1px solid #cc00cc;
+  margin-bottom: 30px;
+}
+
+#showcase .row{
+  height: 600px;
+}
+
+#showcase h1{
+  font-size: 33px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+#showcase p{
+  color: #ccc;
+  margin: 0;
+}
+
+#showcase .showcase-content{
+  background: #333;
+  color: #fff;
+  border-radius: 90px;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+/* FEATURES */
+#features h2{
+  font-size: 26px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#features p{
+  color: #888;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+#features .fa{
+  font-size: 40px;
+  color: #cc00cc;
+}
+
+/* INFO */
+#info{
+  background: url('../image/info-bg.jpg') no-repeat;
+  color: #fff;
+  height: 520px;
+}
+
+#info h2{
+  font-size: 26px;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 5px;
+}
+
+#info ul{
+  list-style: none;
+  padding: 0;
+}
+
+#info li{
+  line-height: 2em;
+  font-size: 16px;
+}
+
+/* COMPANY */
+#company{
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+#company h4{
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+#company p{
+  font-size: 12px;
+}
+
+#company ul{
+  padding: 0;
+  list-style: none;
+  line-height: 1.8em;
+}
+
+#company ul li{
+  font-size: 12px;
+}
+
+#company input[type="email"]{
+  padding: 5px;
+}
+
+#company button{
+  background: #222;
+  color: #fff;
+  padding: 8px;
+  border: 0;
+}
+
+#subheader{
+  background: #333;
+}
+
+#subheader h1{
+  font-size: 16px;
+  color: #fff;
+}
+
+/* PAGE */
+#page{
+  margin-bottom: 40px;
+}
+
+/* SERVICES */
+.services ul li{
+  list-style: none;
+  padding: 10px;
+}
+
+.services ul li:nth-child(odd){
+  background: #333;
+  color: #fff;
+}
+
+.services ul li:nth-child(even){
+  background: #56a79a;
+  color: #fff;
+}
+
+/* CONTACT */
+.contact form{
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.contact form input[type="text"]{
+  width: 50%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.contact form input[type="email"]{
+  width: 50%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.contact form textarea{
+  width: 50%;
+  height: 100px;
+}
+
+.contact form button{
+  width: 50%;
+  padding: 10px 0;
+  border: 0;
+  background: #222;
+  color: #fff;
+
+}
+
+.contact form label{
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+#main-footer{
+  background: #56a79a;
+  color: #fff;
+}
+
+#main-footer p{
+  margin:8px;
+  font-size: 12px;
+}
+
+
+
+/* MEDIA QUERY */
+@media(max-width: 800px){
+  #showcase h1{
+    font-size: 25px;
+
+  }
+}
+
+@media(min-width: 1300px){
+  body{
+    font-size: 17px;
+  }
+}
+
+@media(max-width: 500px){
+  body{
+    font-size: 12px;
+  }
+
+  #main-header h1{
+    font-size: 24px;
+  }
+
+  #navbar li a{
+    font-size: 10px;
+  }
+
+  #showcase .row{
+    height: 350px;
+  }
+
+  #showcase h1{
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+
+  #showcase p{
+    display: none;
+  }
+
+  #showcase .showcase-content{
+    padding: 20px 3px 6px 3px;
+  }
+
+  #features h2{
+    font-size: 18px;
+  }
+
+  #features .feat{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  #info{
+    height: 650px;
+  }
+
+  #info .wrap{
+    border: 1px solid #fff;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  #info h2{
+    font-size: 20px;
+  }
+
+  #info li{
+    font-size: 14px;
+  }
+
+  #subheader{
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #page h2{
+    font-size: 14px;
+  }
+
+  .services h3{
+    font-size: 13px;
+  }
+
+  .services p{
+    font-size: 10px;
+  }
+
+  .contact form input[type="text"]{
+    width: 80%;
+    height: 18px;
+  }
+
+  .contact form input[type="email"]{
+    width: 80%;
+    height: 18px;
+  }
+
+  .contact form textarea{
+    width: 80%;
+    height: 40px;
+  }
+
+  .contact form button{
+    width: 80%;
+    padding: 5px 0;
+  }
+
+  .contact form label{
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+
+  #company h4{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #company ul, #company p{
+    margin-left: 80px;
+    margin-right: 50px;
+  }
+
+   #company form{
+     text-align: center;
+   }
+
+   #company input[type="email"]{
+     padding: 5px;
+     font-size: 10px;
+   }
+
+   #company button{
+     font-size: 10px;
+     margin-bottom: 10px;
+   }
+
+   #main-footer{
+     padding: 10px;
+   }
+
+   #main-footer p{
+     margin: 2px;
+     font-size: 10px;
+   }
+
+}
